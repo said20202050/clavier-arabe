@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة المفاتيح العربية الافتراضية</title>
+
+    <!-- استدعاء مكتبة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>لوحة المفاتيح العربية الافتراضية</h1>
+
+    <!-- مربع النص الرئيسي -->
+    <textarea id="textArea" placeholder="ابدأ الكتابة هنا..."></textarea>
+    <button id="copyBtn">نسخ النص</button>
+
+    <!-- لوحة المفاتيح -->
+    <div id="keyboard">
+        <!-- الحروف العربية -->
+        <div class="key" onclick="addChar('ا')">ا</div>
+        <div class="key" onclick="addChar('ب')">ب</div>
+        <div class="key" onclick="addChar('ت')">ت</div>
+        <div class="key" onclick="addChar('ث')">ث</div>
+        <div class="key" onclick="addChar('ج')">ج</div>
+        <div class="key" onclick="addChar('ح')">ح</div>
+        <div class="key" onclick="addChar('خ')">خ</div>
+        <div class="key" onclick="addChar('د')">د</div>
+        <div class="key" onclick="addChar('ذ')">ذ</div>
+        <div class="key" onclick="addChar('ر')">ر</div>
+        <div class="key" onclick="addChar('ز')">ز</div>
+        <div class="key" onclick="addChar('س')">س</div>
+        <div class="key" onclick="addChar('ش')">ش</div>
+        <div class="key" onclick="addChar('ص')">ص</div>
+        <div class="key" onclick="addChar('ض')">ض</div>
+        <div class="key" onclick="addChar('ط')">ط</div>
+        <div class="key" onclick="addChar('ظ')">ظ</div>
+        <div class="key" onclick="addChar('ع')">ع</div>
+        <div class="key" onclick="addChar('غ')">غ</div>
+        <div class="key" onclick="addChar('ف')">ف</div>
+        <div class="key" onclick="addChar('ق')">ق</div>
+        <div class="key" onclick="addChar('ك')">ك</div>
+        <div class="key" onclick="addChar('ل')">ل</div>
+        <div class="key" onclick="addChar('م')">م</div>
+        <div class="key" onclick="addChar('ن')">ن</div>
+        <div class="key" onclick="addChar('ه')">ه</div>
+        <div class="key" onclick="addChar('و')">و</div>
+        <div class="key" onclick="addChar('ي')">ي</div>
+
+        <!-- الأرقام -->
+        <div class="key" onclick="addChar('0')">0</div>
+        <div class="key" onclick="addChar('1')">1</div>
+        <div class="key" onclick="addChar('2')">2</div>
+        <div class="key" onclick="addChar('3')">3</div>
+        <div class="key" onclick="addChar('4')">4</div>
+        <div class="key" onclick="addChar('5')">5</div>
+        <div class="key" onclick="addChar('6')">6</div>
+        <div class="key" onclick="addChar('7')">7</div>
+        <div class="key" onclick="addChar('8')">8</div>
+        <div class="key" onclick="addChar('9')">9</div>
+
+        <!-- الإيموجي -->
+        <div class="key" onclick="addChar('😀')">😀</div>
+        <div class="key" onclick="addChar('😂')">😂</div>
+        <div class="key" onclick="addChar('😍')">😍</div>
+        <div class="key" onclick="addChar('❤️')">❤️</div>
+        <div class="key" onclick="addChar('👍')">👍</div>
+
+        <!-- الأزرار الخاصة -->
+        <div class="key special" onclick="addChar(' ')">مسافة</div>
+        <div class="key special" onclick="deleteChar()">مسح</div>
+    </div>
+
+    <!-- أزرار وسائل التواصل الاجتماعي -->
+    <div id="socialMediaButtons">
+        <a href="https://www.facebook.com/search/top?q=" target="_blank" class="social-btn facebook">
+            <i class="fab fa-facebook-f"></i> فيسبوك
+        </a>
+        <a href="https://www.tiktok.com/search?q=" target="_blank" class="social-btn tiktok">
+            <i class="fab fa-tiktok"></i> تيكتوك
+        </a>
+        <a href="https://twitter.com/search?q=" target="_blank" class="social-btn twitter">
+            <i class="fab fa-twitter"></i> تويتر
+        </a>
+        <a href="https://www.instagram.com/explore/tags/" target="_blank" class="social-btn instagram">
+            <i class="fab fa-instagram"></i> إنستجرام
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
